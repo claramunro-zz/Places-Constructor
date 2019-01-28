@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Places You've Been</title>
+  </head>
+  <body>
+    <div class="container">
+     <h1>Places</h1>
+     <div class="row">
+       <div class="col-md-6">
+
+         <hr>
+         <h2>Add a Place:</h2>
+
+         <form id="new-location">
+           <div class="form-group">
+             <label for="new-location">Location</label>
+             <input type="text"  class="form-control" id="new-location" required>
+           </div>
+           <div class="form-group">
+             <label for="new-landmark">Landmark</label>
+             <input type="text"  class="form-control" id="new-landmark" required>
+           </div>
+           <div class="form-group">
+             <label for="new-time">Time of Year</label>
+             <input type="date"  class="form-control" id="new-time" required>
+           </div>
+           <div class="form-group">
+             <label for="new-note">Note:</label>
+             <input type="text"  class="form-control" id="new-note" required>
+           </div>
+           <button type="submit" class="btn-primary">Submit</button>
+         </form>
+
+         <hr>
+
+         <h2>Locations:</h2>
+         <ul id="locations">
+         </ul>
+       </div>
+
+       <div class="col-md-6">
+         <div id="show-location">
+           <p>Location: <span class="location"></span></p>
+           <p>Landmark: <span class="landmark"></span></p>
+           <p>Time of Year: <span class="time"></span></p>
+           <p>Note: <span class="note"></span></p>
+           <div id="buttons">
+           </div>
+         </div>
+       </div>
+
+     </div>
+   </div>
+  </body>
+</html>
